@@ -5,7 +5,7 @@ import Posts from './components/Posts/Posts';
 import Form from './components/Form/Form';
 import memories from './images/memories.png';
 import useStyles from './styles';
-
+import { getPosts } from './actions/posts';
 const App = () => {
     const [currentId, setCurrentId] = useState(0);
     const dispatch = useDispatch();
