@@ -1,70 +1,10 @@
-# Getting Started with Create React App
+// https://github.com/adrianhajdin/project_mern_memories
+// https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbVlCS1VnSFgyV3NSR1poYmhiZkEwaUZpekVkQXxBQ3Jtc0tsanZEN0ZhdFEtemVhWFdLMTRWS1FTRUNTNFBBdGw2SHV2UmE4WnBHcWpncnYxTjA0Zm1KckM3ZDd4OWZGLThjcHpWVVdtYzhLZVp5R2V1dEgwWWVNaG14ZGFWTHBQOHNWUGVCV1F6ai0wSVFGbjZ3Zw&q=https%3A%2F%2Fwww.svgbackgrounds.com%2F&v=VsUzmlZfYNg
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+// https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbWVPRlVmS1dNcWVlUklZSE51S2p2bVJ0Z0kzd3xBQ3Jtc0tsbDRpTDZabld6LUxRc1U5aFBDQ3BpSWJaT3EwNUlmM290ODdnSG43ZEtjOTZMNGxMNjNvUnBwSEo2M0l5T00zRlhkREh2ZzVmb2ZFemZNVVVqdlJ5azFCWnhnNC05SUxqM2N4YnVVM3Z5V2w3bmlTcw&q=https%3A%2F%2Fgist.github.com%2Fadrianhajdin%2Fcc90da3990871d509ccbd9068da5a636&v=VsUzmlZfYNg
 
-## Available Scripts
+// https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqazB4dU1rRTVNaG5oc0hsRlM5Q3BoamdPVmo3QXxBQ3Jtc0ttZFJ0bFAtUlMxUEFRSmpHSlNDN0c2TXJBTklHdDZrSlBXcFRJUllJY2pTVGE5eUpUcndVdE9nLWdPcW9nVUNXREFiUjkzVjgwektpOGRldEY4U3owb240c3hkNWxCWUFqeVZxQ2V6X29JVEYzTGJwRQ&q=https%3A%2F%2Fconsole.developers.google.com%2F&v=VsUzmlZfYNg
 
-In the project directory, you can run:
+// https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbTE5cTNlTHVtN0x5bWxHUVl3Tmg1bkVGdUhld3xBQ3Jtc0tteXkyeC1RTXBPc0pSb1JtZC1yb2s5dkUybnpDMkpTbXdlMXVZVzlqaUJjYU1mUkFJdWc5c0ktNUxMc2o3aTZWUUJlSWV6TmxIa0VFX0l2YzY1aEVuRnlZRDgxR3EtYWFpYnNPMVZCaXNONjdTY0tNWQ&q=https%3A%2F%2Fstackoverflow.com%2Fquestions%2F43964539%2Fgoogle-api-not-a-valid-origin-for-the-client-url-has-not-been-whitelisted-for&v=VsUzmlZfYNg
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+// https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbTFGeUYwSW5kbEJfTEJ5SVZVeHRHTDRkMnpxZ3xBQ3Jtc0ttWjFhcVo2b0FFbWNxZUtzQzZUSF9uT1Q4bk5xOXpJYWJyeHQ4YnpGVXhIUjQwNUdseGI3b3AwaW0wd3lIQTRMMG5tSkZVMW1Ta1ZCS3lSZ1RQdFMzY200bi1WTVRmT05BQ0U2ZG4tNGtOaWFCUkJkZw&q=https%3A%2F%2Fgist.github.com%2Fadrianhajdin%2F83194cd8c920e6cf79dd83f03076f167&v=VsUzmlZfYNg

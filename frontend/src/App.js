@@ -6,8 +6,10 @@ import Form from './components/Form/Form';
 import memories from './images/memories.png';
 import useStyles from './styles';
 import { getPosts } from './actions/posts';
+
+
 const App = () => {
-    const [currentId, setCurrentId] = useState(0);
+    const [currentId, setCurrentId] = useState(null);
     const dispatch = useDispatch();
     const classes = useStyles();
 
