@@ -62,15 +62,26 @@ export const createPost = (post, history) => async (dispatch) => {
   }
 };
 
-export const updatePost = (id, post) => async (dispatch) => {
+// export const updatePost = (id, post) => async (dispatch) => {
+//   try {
+//     const { data } = await api.updatePost(id, post);
+
+//     dispatch({ type: UPDATE, payload: data });
+//   } catch (error) {
+//     console.log(error);
+//   }
+// };
+
+export const updatePost = (id, updatedPost) => async (dispatch) => {
   try {
-    const { data } = await api.updatePost(id, post);
+    const { data } = await api.updatePost(id, updatedPost);
 
     dispatch({ type: UPDATE, payload: data });
   } catch (error) {
     console.log(error);
   }
 };
+
 
 export const likePost = (id) => async (dispatch) => {
   const user = JSON.parse(localStorage.getItem('profile'));

@@ -24,7 +24,8 @@
     "react-scripts": "^3.4.1",
     "redux": "^4.0.5",
     "redux-thunk": "^2.3.0",
-    "snpm": "^0.1.1"
+    "snpm": "^0.1.1",
+    "tailwindcss": "^3.3.3"
   },
   "scripts": {
     "start": "react-scripts --openssl-legacy-provider start",

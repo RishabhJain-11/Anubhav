@@ -1,12 +1,13 @@
-import React, { useEffect } from 'react';
-import { Paper, Typography, CircularProgress, Divider } from '@material-ui/core/';
+import React, { useEffect, useState } from 'react';
+import { Paper, Typography, CircularProgress, Divider, Card, CardActions, CardContent, CardMedia } from '@material-ui/core/';
 import { useDispatch, useSelector } from 'react-redux';
 import moment from 'moment';
 import { useParams, useHistory, Link } from 'react-router-dom';
-
 import { getPost, getPostsBySearch } from '../../actions/posts';
 import CommentSection from './CommentSection';
 import useStyles from './styles';
+import ThumbUpAltOutlined from '@material-ui/icons/ThumbUpAltOutlined';
+import ThumbUpAltIcon from '@material-ui/icons/ThumbUpAlt';
 
 const Post = () => {
   const { post, posts, isLoading } = useSelector((state) => state.posts);
@@ -14,7 +15,7 @@ const Post = () => {
   const history = useHistory();
   const classes = useStyles();
   const { id } = useParams();
-
+  const [likes, setLikes] = useState(post?.likes);
   useEffect(() => {
     dispatch(getPost(id));
   }, [id]);
@@ -36,7 +37,6 @@ const Post = () => {
       </Paper>
     );
   }
-
   const recommendedPosts = posts.filter(({ _id }) => _id !== post._id);
 
   return (
@@ -51,15 +51,14 @@ const Post = () => {
           ))}
           </Typography>
           <Typography gutterBottom variant="body1" component="p">{post.message}</Typography>
+          <Divider style={{ margin: '20px 0' }} />
           <Typography variant="h6">
-            Created by:
+            Curator of Thoughts 📝
             <Link to={`/creators/${post.name}`} style={{ textDecoration: 'none', color: '#3f51b5' }}>
               {` ${post.name}`}
             </Link>
           </Typography>
           <Typography variant="body1">{moment(post.createdAt).fromNow()}</Typography>
-          <Divider style={{ margin: '20px 0' }} />
-          <Typography variant="body1"><strong>Realtime Chat - coming soon!</strong></Typography>
           <Divider style={{ margin: '20px 0' }} />
           <CommentSection post={post} />
           <Divider style={{ margin: '20px 0' }} />
@@ -70,21 +69,48 @@ const Post = () => {
       </div>
       {!!recommendedPosts.length && (
         <div className={classes.section}>
-          <Typography gutterBottom variant="h5">You might also like:</Typography>
+          <Typography gutterBottom variant="h5">Exploration Continues 🌟</Typography>
           <Divider />
-          <div className={classes.recommendedPosts}>
+          <div
+            className={classes.recommendedPosts}
+            style={{
+              display: 'grid',
+              gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))',
+              gap: '20px',
+              paddingTop: '20px',
+            }}
+          >
             {recommendedPosts.map(({ title, name, message, likes, selectedFile, _id }) => (
-              <div style={{ margin: '20px', cursor: 'pointer' }} onClick={() => openPost(_id)} key={_id}>
-                <Typography gutterBottom variant="h6">{title}</Typography>
-                <Typography gutterBottom variant="subtitle2">{name}</Typography>
-                <Typography gutterBottom variant="subtitle2">{message}</Typography>
-                <Typography gutterBottom variant="subtitle1">Likes: {likes.length}</Typography>
-                <img src={selectedFile} width="200px" />
+              <div
+                style={{ cursor: 'pointer', minWidth: '300px' }}
+                onClick={() => openPost(_id)}
+                key={_id}
+              >
+                <Card sx={{ maxWidth: 345 }}>
+                  <img
+                    src={selectedFile}
+                    width="100%"
+                    height="200px"
+                    style={{ objectFit: 'cover' }}
+                  />
+                  <CardContent>
+                    <Typography gutterBottom variant="h5" component="div">
+                      {title}
+                    </Typography>
+                    <Typography gutterBottom variant="h6" component="div">
+                       Digital Explorer 🌐 {name}
+                    </Typography>
+                    <Typography variant="body2" color="text.secondary">
+                      {message}
+                    </Typography>
+                  </CardContent>
+                </Card>
               </div>
             ))}
           </div>
         </div>
       )}
+
     </Paper>
   );
 };
