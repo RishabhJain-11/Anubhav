@@ -7,7 +7,6 @@ import ThumbUpAltOutlined from '@material-ui/icons/ThumbUpAltOutlined';
 import { useDispatch } from 'react-redux';
 import moment from 'moment';
 import { useHistory } from 'react-router-dom';
-
 import { likePost, deletePost } from '../../../actions/posts';
 import useStyles from './styles';
 
@@ -17,10 +16,6 @@ const Post = ({ post, setCurrentId }) => {
   const dispatch = useDispatch();
   const history = useHistory();
   const classes = useStyles();
-
-  // const userId = user?.result.googleId || user?.result?._id;
-  // const hasLikedPost = post.likes.find((like) => like === userId);
-
   const userId = user?.result.googleId || user?.result?._id;
   const hasLikedPost = post.likes && post.likes.find((like) => like === userId);
 
